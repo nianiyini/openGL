@@ -1,0 +1,6 @@
+glut.h存放位置：
+FALSE：
+C:\Program Files\Microsoft Visual Studio\2022\Community\SDK\ScopeCppSDK\vc15\SDK\include\um\gl
+
+TRUE：
+C:\Program Files (x86)\Windows Kits\10\Lib\10.0.26100.0\um
