@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{01C0E528-8B96-30DA-8F88-79DCEAA7DE7A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\include;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\include;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\code;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\.;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\include;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\include;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\code;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\.;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\include;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\include;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\code;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\.;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\include;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\include;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\code;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\.;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\2c12e69e7fd7cb988e8078703db25daa\generate.stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\CMake\bin\cmake.exe -SC:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp -BC:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/Assimp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\CMakeLists.txt;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\assimp.pc.in;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeCCompiler.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeCXXCompiler.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeRCCompiler.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeSystem.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\cmake-modules\FindPkgMacros.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\cmake-modules\PrecompiledHeader.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\cmake-modules\assimp-plain-config.cmake.in;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\code\CMakeLists.txt;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib\CMakeLists.txt;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib\zlib.pc.cmakein;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\include\assimp\config.h.in;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\include\assimp\revision.h.in;D:\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;D:\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;D:\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\generate.stamp;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\contrib\zlib\CMakeFiles\generate.stamp;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\CMake\bin\cmake.exe -SC:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp -BC:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/Assimp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\CMakeLists.txt;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\assimp.pc.in;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeCCompiler.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeCXXCompiler.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeRCCompiler.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeSystem.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\cmake-modules\FindPkgMacros.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\cmake-modules\PrecompiledHeader.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\cmake-modules\assimp-plain-config.cmake.in;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\code\CMakeLists.txt;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib\CMakeLists.txt;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib\zlib.pc.cmakein;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\include\assimp\config.h.in;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\include\assimp\revision.h.in;D:\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;D:\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;D:\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\generate.stamp;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\contrib\zlib\CMakeFiles\generate.stamp;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\CMake\bin\cmake.exe -SC:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp -BC:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/Assimp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\CMakeLists.txt;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\assimp.pc.in;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeCCompiler.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeCXXCompiler.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeRCCompiler.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeSystem.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\cmake-modules\FindPkgMacros.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\cmake-modules\PrecompiledHeader.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\cmake-modules\assimp-plain-config.cmake.in;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\code\CMakeLists.txt;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib\CMakeLists.txt;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib\zlib.pc.cmakein;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\include\assimp\config.h.in;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\include\assimp\revision.h.in;D:\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;D:\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;D:\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\generate.stamp;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\contrib\zlib\CMakeFiles\generate.stamp;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\CMake\bin\cmake.exe -SC:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp -BC:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/Assimp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\CMakeLists.txt;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\assimp.pc.in;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeCCompiler.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeCXXCompiler.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeRCCompiler.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\4.2.0-rc2\CMakeSystem.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\cmake-modules\FindPkgMacros.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\cmake-modules\PrecompiledHeader.cmake;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\cmake-modules\assimp-plain-config.cmake.in;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\code\CMakeLists.txt;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib\CMakeLists.txt;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\contrib\zlib\zlib.pc.cmakein;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\include\assimp\config.h.in;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\include\assimp\revision.h.in;D:\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;D:\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;D:\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\CMakeFiles\generate.stamp;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\contrib\zlib\CMakeFiles\generate.stamp;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\assimp\build_x86\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

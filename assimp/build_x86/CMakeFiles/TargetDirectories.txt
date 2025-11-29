@@ -1,0 +1,9 @@
+C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/CMakeFiles/UpdateAssimpLibsDebugSymbolsAndDLLs.dir
+C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/CMakeFiles/INSTALL.dir
+C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/CMakeFiles/ALL_BUILD.dir
+C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/contrib/zlib/CMakeFiles/zlibstatic.dir
+C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/contrib/zlib/CMakeFiles/INSTALL.dir
+C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/contrib/zlib/CMakeFiles/ALL_BUILD.dir
+C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/code/CMakeFiles/assimp.dir
+C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/code/CMakeFiles/INSTALL.dir

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -72,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(LibraryPath)</LibraryPath>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);D:\glfw-3.4.bin.WIN32\include</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);D:\glfw-3.4.bin.WIN32\include;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\LearnOpenGL\includes\irrKlang</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -80,14 +80,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\glad\include;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\glm</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\Users\Hibb\OneDrive\Desktop\c++\openGL\glm;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\glew\include;$(ProjectDir)include;D:\vcpkg\vcpkg-master\installed\x86-windows\include;D:\glad\include;D:\openAL\include;D:\libsndfile\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\glfw-3.4.bin.WIN32\lib-vc2022</AdditionalLibraryDirectories>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);D:\glfw-3.4.bin.WIN32\lib-vc2022\glfw3.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Hibb\OneDrive\Desktop\c++\openGL\glew\lib\Release\Win32;$(ProjectDir)lib;D:\vcpkg\vcpkg-master\installed\x86-windows\lib;D:\glfw-3.4.bin.WIN32\lib-vc2022;D:\openAL\libs\Win32;D:\libsndfile\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);D:\glfw-3.4.bin.WIN32\lib-vc2022\glfw3.lib;C:\Users\Hibb\OneDrive\Desktop\c++\openGL\glew\lib\Release\Win32\glew32s.lib;assimp-vc143-mtd.lib;assimp-vc143-mt.lib;OpenAL32.lib;libsndfile-1.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -110,6 +110,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,13 +132,72 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="camera.cpp" />
     <ClCompile Include="D:\glad\src\glad.c" />
     <ClCompile Include="errorCheck.cpp" />
     <ClCompile Include="homework1.cpp" />
+    <ClCompile Include="LightCone.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="shader.cpp" />
+    <ClCompile Include="stage.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="animation.h" />
+    <ClInclude Include="animator.h" />
+    <ClInclude Include="animdata.h" />
+    <ClInclude Include="assimp_glm_helpers.h" />
+    <ClInclude Include="bone.h" />
+    <ClInclude Include="camera.h" />
     <ClInclude Include="errorCheck.h" />
+    <ClInclude Include="LightCone.h" />
+    <ClInclude Include="LightingSystem.h" />
+    <ClInclude Include="mesh.h" />
+    <ClInclude Include="mineAudio.h" />
+    <ClInclude Include="model.h" />
+    <ClInclude Include="model_animation.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="shader.h" />
+    <ClInclude Include="simpleBone.h" />
+    <ClInclude Include="stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="openGL.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="vertex.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="all_light.glsl" />
+    <None Include="asteroids.frag" />
+    <None Include="asteroids.vert" />
+    <None Include="color.frag" />
+    <None Include="color.vert" />
+    <None Include="color2.frag" />
+    <None Include="fragment.frag" />
+    <None Include="ground.frag" />
+    <None Include="ground.vert" />
+    <None Include="instance.frag" />
+    <None Include="instance.vert" />
+    <None Include="light.frag" />
+    <None Include="light.vert" />
+    <None Include="light_cone.frag" />
+    <None Include="light_cone.vert" />
+    <None Include="model-easy.frag" />
+    <None Include="model.frag" />
+    <None Include="model.vert" />
+    <None Include="planet.frag" />
+    <None Include="planet.vert" />
+    <None Include="point.frag" />
+    <None Include="point.vert" />
+    <None Include="quad.frag" />
+    <None Include="quad.vert" />
+    <None Include="skybox.frag" />
+    <None Include="skybox.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="1.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

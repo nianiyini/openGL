@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/cmake_install.cmake",
+		"C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/contrib/zlib/cmake_install.cmake",
+		"C:/Users/Hibb/OneDrive/Desktop/c++/openGL/assimp/build_x86/code/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
