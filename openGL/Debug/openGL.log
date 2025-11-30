@@ -1,0 +1,13 @@
+﻿  stage.cpp
+C:\Users\Hibb\OneDrive\Desktop\c++\openGL\openGL\model_animation.h(176,43): warning C4018: “<”: 有符号/无符号不匹配
+  (编译源文件“stage.cpp”)
+  
+C:\Users\Hibb\OneDrive\Desktop\c++\openGL\openGL\model_animation.h(201,17): warning C4018: “<=”: 有符号/无符号不匹配
+  (编译源文件“stage.cpp”)
+  
+C:\Users\Hibb\OneDrive\Desktop\c++\openGL\openGL\stage.cpp(496,23): warning C4244: “参数”: 从“float”转换到“const unsigned int”，可能丢失数据
+C:\Users\Hibb\OneDrive\Desktop\c++\openGL\openGL\stage.cpp(498,23): warning C4244: “参数”: 从“float”转换到“const unsigned int”，可能丢失数据
+C:\Users\Hibb\OneDrive\Desktop\c++\openGL\openGL\stage.cpp(717,35): warning C4018: “<”: 有符号/无符号不匹配
+  openGL.vcxproj -> C:\Users\Hibb\OneDrive\Desktop\c++\openGL\Debug\openGL.exe
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。

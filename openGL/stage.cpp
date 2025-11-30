@@ -530,9 +530,9 @@ int main()
         lampLights[i].softEdge = 0.2f;
     }
 
-    Shader modelShader("model.vert", "model.frag");
-    Shader skyboxShader("skybox.vert", "skybox.frag");
-    Shader quadShader("quad.vert", "quad.frag");
+    Shader modelShader("shader/model.vert", "shader/model.frag");
+    Shader skyboxShader("shader/skybox.vert", "shader/skybox.frag");
+    Shader quadShader("shader/quad.vert", "shader/quad.frag");
 
     float skyboxVertices[] = {
         // positions          
